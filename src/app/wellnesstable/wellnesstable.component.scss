@@ -1,29 +1,29 @@
 table {
-    width: 100%;
-    overflow-x: auto;
-    overflow-y: hidden;
-    min-width: 500px;
+  width: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
+  min-width: 500px;
 }
 th.mat-header-cell {
-    text-align: left;
-    max-width: 300px;
+  text-align: left;
+  max-width: 300px;
 }
 .button {
-    background-color:yellow;
-    border:1px solid;
-    color:black;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    width: 100%;
-  }
-
-.mat-row:nth-child(even){
-    background-color:lightgoldenrodyellow;
+  background-color: #d46c64;
+  border: 1px solid;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  width: 100%;
 }
-        
-.mat-row:nth-child(odd){
-    background-color:lightcyan;
+
+.mat-row:nth-child(even) {
+  background-color: lightgoldenrodyellow;
+}
+
+.mat-row:nth-child(odd) {
+  background-color: lightcyan;
 }
