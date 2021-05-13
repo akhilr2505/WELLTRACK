@@ -34,4 +34,8 @@ export class MonitorService {
   {
     return this.http.get('https://timeseries-emp.herokuapp.com/readdata');
   }
+  public predict(data: any):Observable<any>
+  {
+    return this.http.get('https://wellbeing-lstm.herokuapp.com/?query='+data);
+  }
 }

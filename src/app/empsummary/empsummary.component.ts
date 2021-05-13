@@ -1,7 +1,8 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { FormControl,FormGroup,Validators} from '@angular/forms';
 import {MonitorService} from '../monitor.service'
-import {
+import 
+{
   ChartComponent,
   ApexAxisChartSeries,
   ApexChart,
@@ -38,6 +39,8 @@ export class EmpsummaryComponent implements OnInit{
   public date:any =[];
   public score:any =[];
   public message:any="";
+  public average: any=0;
+  public predict: any="";
 
   constructor(private monitorservice:MonitorService) 
   {}
@@ -53,12 +56,27 @@ export class EmpsummaryComponent implements OnInit{
             this.data.push(res[i].formData);
           }
         }
+        var sum = 0;
+        for( var i = 0; i < this.score.length; i++ ){
+            sum += this.score[i];
+        }
+        this.average = sum/this.score.length;
         let d = this.data.pop()
-        this.message = "The Employe Name: "+d.name+" having ID "+d.empid;
+        this.message = "The Employe Name: "+d.name+" having ID "+d.empid+" has average wellbeing score: "+this.average+".";
         console.log(this.data);
         console.log(this.message);
       })
-
+    }
+    onPredict()
+    {
+      if(this.summaryGroup.valid)
+      {
+        this.monitorservice.predict(this.summaryGroup.value.empid).subscribe((res: any)=>
+        {
+          console.log(res.toString());
+          this.predict=res.toString();
+        })
+      }
     }
 
     onclick()
@@ -148,5 +166,6 @@ export class EmpsummaryComponent implements OnInit{
       this.data.pop();
     }
     this.message="";
+    this.average="";
   }
 }
