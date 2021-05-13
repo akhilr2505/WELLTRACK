@@ -1,5 +1,69 @@
 #chart {
-    max-width: 650px;
-    margin: 35px auto;
-  }
-  
+  max-width: 650px;
+  margin: 35px auto;
+}
+
+.summaryMain {
+  background-color: #f5dcdb;
+  height: 100;
+}
+
+.summaryContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.summaryHeading {
+  font-size: 2rem;
+
+  margin: 2rem auto;
+  padding: 2rem;
+  /* border-bottom: 2px solid #cc4b4a; */
+  width: 40rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.summaryForm {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.summaryLabel {
+  font-size: 20px;
+}
+
+.button {
+  background-color: #cc4b4a;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 1.5rem 0;
+  border-radius: 10px;
+}
+
+.button:hover {
+  background-color: #333;
+}
+
+.submit {
+  margin-top: 1rem;
+}
+
+.summaryInput {
+  border-radius: 10px;
+  padding: 1rem;
+  font-size: 16px;
+  outline: none;
+  height: 12px;
+}

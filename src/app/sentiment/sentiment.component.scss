@@ -1,6 +1,76 @@
 #chart {
-    max-width: 380px;
-    margin: 35px auto;
-    padding: 0;
-  }
-  
+  max-width: 380px;
+  margin: 35px auto;
+  padding: 0;
+}
+
+.sentimentMain {
+  background-color: #f5dcdb;
+  height: 100%;
+}
+
+.sentimentMain h1 {
+  font-size: 2rem;
+
+  margin: 2rem auto;
+  padding: 2rem;
+  /* border-bottom: 2px solid #cc4b4a; */
+  width: 40rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sentimentForm {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.sentimentLabel {
+  font-size: 20px;
+}
+
+.button {
+  background-color: #cc4b4a;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 1.5rem 0;
+  border-radius: 10px;
+}
+
+.button:hover {
+  background-color: #333;
+}
+
+.submit {
+  margin: 0;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  margin-left: 50%;
+}
+
+.analysis {
+  margin: 0;
+  margin-left: 49.5%;
+}
+
+.clear {
+  margin: 0;
+  margin-left: 50%;
+}
+
+.sentimentInput {
+  border-radius: 10px;
+  padding: 1rem;
+  font-size: 16px;
+  outline: none;
+  height: 12px;
+}

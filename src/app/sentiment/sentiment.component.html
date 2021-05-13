@@ -1,26 +1,30 @@
-<h1>Employee Sentiment Search Board</h1>
-<div>
+<div class="sentimentMain">
+  <h1>Employee Sentiment Search Board</h1>
+  <div class="sentimentForm">
     <form [formGroup]="sentimentGroup" (ngSubmit)="onSubmit()">
-        <label>
-            Employee Twitter Handle: 
-            <input placeholder="jack" formControlName="handle">
-        </label>
-        <br>
-        <button type="submit" >Submit</button>
-    </form> 
-</div>
-<button (click)="onclick()">Analysis</button>
-<div>
+      <label class="sentmentLabel">
+        Employee Twitter Handle:
+        <input
+          class="sentimentInput"
+          placeholder="jack"
+          formControlName="handle"
+        />
+      </label>
+      <br />
+      <button class="submit button" type="submit">Submit</button>
+    </form>
+  </div>
+  <button class="analysis button" (click)="onclick()">Analysis</button>
+  <div>
     <div id="chart">
-        <apx-chart
-          [series]="chartOptions.series"
-          [chart]="chartOptions.chart"
-          [labels]="chartOptions.labels"
-          [responsive]="chartOptions.responsive"
-        ></apx-chart>
-      </div>
+      <apx-chart
+        [series]="chartOptions.series"
+        [chart]="chartOptions.chart"
+        [labels]="chartOptions.labels"
+        [responsive]="chartOptions.responsive"
+      ></apx-chart>
+    </div>
+  </div>
+  <div>Mood: {{ message }}</div>
+  <button class="clear button" (click)="clear()">Clear</button>
 </div>
-<div>
-    Mood: {{message}}
-</div>
-<button (click)="clear()">Clear</button>
