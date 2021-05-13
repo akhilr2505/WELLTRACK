@@ -1,0 +1,30 @@
+<h1>Employee Summary Search Board</h1>
+<div>
+    <form [formGroup]="summaryGroup" (ngSubmit)="onSubmit()">
+        <label>
+            Employee ID: 
+            <input placeholder="EMP000" formControlName="empid">
+        </label>
+        <br>
+        <button type="submit">Submit</button>
+    </form> 
+</div>
+<button (click)="onclick()">Chart Analysis</button>
+<div>
+    <div id="chart">
+        <apx-chart
+    [series]="chartOptions.series"
+    [chart]="chartOptions.chart"
+    [xaxis]="chartOptions.xaxis"
+    [dataLabels]="chartOptions.dataLabels"
+    [grid]="chartOptions.grid"
+    [stroke]="chartOptions.stroke"
+    [title]="chartOptions.title"
+  ></apx-chart>
+      </div>
+</div>
+<button (click)="onSummary()">Summary</button>
+<div>
+    Summary : {{message}}
+</div>
+<button (click)="clear()">Clear</button>

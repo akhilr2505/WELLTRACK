@@ -1,0 +1,249 @@
+<div style="background-color:aquamarine;">
+    <h2 style="text-align: center;"><b>Employee Daily Details</b></h2>
+    <div>
+        <form [formGroup]="formGroup" (ngSubmit)="onSubmit()">
+            <h4 style="text-align: center;"><b>Introduction DATA</b></h4>
+            <div class ="label intro" style="margin-right: 425px;margin-left: 425px;text-align:center;">
+                <label>
+                    Date: 
+                    <input placeholder="dd/mm/yyyy" formControlName="date">
+                </label>
+                <label>
+                    HR ID: 
+                    <input placeholder="id" formControlName="hrid">
+                </label>
+                <br>
+                <label>
+                    Emplyoyee Name: 
+                    <input placeholder="name" formControlName="name">
+                </label>
+                <label>
+                    Emplyoyee ID: 
+                    <input placeholder="id" formControlName="empid">
+                </label>   
+            </div>  
+            <br>
+            <br>
+            <h4 style="text-align: center;"><b>HR DATA</b></h4>
+            <br>
+            <div class="label hr" style="margin-right: 425px;margin-left: 425px;text-align: center;">
+                <label>
+                    Manager ID: 
+                    <input placeholder="id" formControlName="mgrid">
+                </label>
+                <label >
+                    Manager Daily Review: 
+                    <input placeholder="Good/Ok/Bad" formControlName="mgrrev">
+                </label>
+                <br>
+                <label >
+                    Attendance Ratio: 
+                    <input placeholder="In decimal" formControlName="att">
+                </label>
+                <label >
+                    Duraion of Work Hour: 
+                    <input placeholder="In hours" formControlName="dur">
+                </label>
+                <br>
+                <label >
+                    Salary: 
+                    <input placeholder="In LPA" formControlName="sal">
+                </label>
+                <label >
+                    Location of Company Campus: 
+                    <input placeholder="Hyderabad" formControlName="loc">
+                </label>
+                <br>
+                <label >
+                    Status of Employment: 
+                    <input placeholder="Intern/FTE" formControlName="empstatus">
+                </label>
+                <label >
+                    Profile of Work: 
+                    <input placeholder="Opt/Tech/Mgt/Others" formControlName="profile">
+                </label>
+                <br>
+                <label >
+                    Type of Hiring: 
+                    <input placeholder="off/on/diversity" formControlName="hire">
+                </label>
+                <label >
+                    Working since: 
+                    <input placeholder="In monthes" formControlName="wrksince">
+                </label>
+            </div>
+            <br>
+            <br>
+            <h4 style="text-align: center;"><b>Other DATA</b></h4>
+            <br>
+            <div class ="label emp" style="text-align: end;margin-right: 425px;margin-left: 425px;">
+                <label>
+                    Are you Married? : 
+                    <input placeholder="yes/no/maybe" formControlName="d1">
+                </label>
+                <br>
+                <label>
+                    Are you in a Relationship? : 
+                    <input placeholder="yes/no/maybe" formControlName="d2">
+                </label>
+                <br>
+                <label>
+                    Are you Single? : 
+                    <input placeholder="yes/no/maybe" formControlName="d3">
+                </label>
+                <br>
+                <label>
+                    Do you eat junk foods?: 
+                    <input placeholder="yes/no/maybe" formControlName="d4">
+                </label>
+                <br>
+                <label>
+                    Do you have fruits and vegitables?: 
+                    <input placeholder="yes/no/maybe" formControlName="d5">
+                </label>
+                <br>
+                <label>
+                    Do you have any personal stress?: 
+                    <input placeholder="yes/no/maybe" formControlName="d6">
+                </label>
+                <br>
+                <label>
+                    Do you have any stress due to your profession?: 
+                    <input placeholder="yes/no/maybe" formControlName="d7">
+                </label>
+                <br>
+                <label>
+                    Have you ever gone for touring in your office hour?: 
+                    <input placeholder="yes/no/maybe" formControlName="d8">
+                </label>
+                <br>
+                <label>
+                    Have ypu ever gone for business tour from our Organisation? : 
+                    <input placeholder="yes/no/maybe" formControlName="d9">
+                </label>
+                <br>
+                <label>
+                    Do you use frequently social sites? : 
+                    <input placeholder="yes/no/maybe" formControlName="d10">
+                </label>
+                <br>
+                <label>
+                    Do you think you are supportive to your collegues? : 
+                    <input placeholder="yes/no/maybe" formControlName="d11">
+                </label>
+                <br>
+                <label>
+                    Have you ever achived honours and fame in your personal life? : 
+                    <input placeholder="yes/no/maybe" formControlName="d12">
+                </label>
+                <br>
+                <label>
+                    Have you ever achived honours and fame in your professional life? : 
+                    <input placeholder="yes/no/maybe" formControlName="d13">
+                </label>
+                <br>
+                <label>
+                    Do you think you are sincere to your profession? : 
+                    <input placeholder="yes/no/maybe" formControlName="d14">
+                </label>
+                <br>
+                <label>
+                    Do you frequenly get tired while working? : 
+                    <input placeholder="yes/no/maybe" formControlName="d15">
+                </label>
+                <br>
+                <label>
+                    Do you sleep atleast 8 hrs of sleep? : 
+                    <input placeholder="yes/no/maybe" formControlName="d16">
+                </label>
+                <br>
+                <label>
+                    Do you go gym/ do meditation frequently? : 
+                    <input placeholder="yes/no/maybe" formControlName="d17">
+                </label>
+                <br>
+                <label>
+                    Did you took sick leave more than 1 day? : 
+                    <input placeholder="yes/no/maybe" formControlName="d18">
+                </label>
+                <br>
+                <label>
+                    Did you get opportunity for a vacation from our Organisation? : 
+                    <input placeholder="yes/no/maybe" formControlName="d19">
+                </label>
+                <br>
+                <label>
+                    Is your income sufficient for your living including your dependents? : 
+                    <input placeholder="yes/no/maybe" formControlName="d20">
+                </label>
+                <br>
+                <label>
+                    Do you have any relative/hometown near to organisation? : 
+                    <input placeholder="yes/no/maybe" formControlName="d21">
+                </label>
+                <br>
+                <label>
+                    Did you gave GATE/GRE/GMAT/TOEFL/CAT/UPSC in recent monthes? : 
+                    <input placeholder="yes/no/maybe" formControlName="d22">
+                </label>
+                <br>
+                <label>
+                    Did you offered ESOP? : 
+                    <input placeholder="yes/no/maybe" formControlName="d23">
+                </label>
+                <br>
+                <label>
+                    Are you in current company form more than 2 years continuosly? : 
+                    <input placeholder="yes/no/maybe" formControlName="d24">
+                </label>
+                <br>
+                <label>
+                    Are you comfortable to your current job role and project? : 
+                    <input placeholder="yes/no/maybe" formControlName="d25">
+                </label>
+                <br>
+                <label>
+                    Do you think your work life balance is good? : 
+                    <input placeholder="yes/no/maybe" formControlName="d26">
+                </label>
+                <br>
+                <label>
+                    Do you think your work life balance is bad? 
+                    <input placeholder="yes/no/maybe" formControlName="d27">
+                </label>
+                <br>
+                <label>
+                    Do you get high salry hike? : 
+                    <input placeholder="yes/no/maybe" formControlName="d28">
+                </label>
+                <br>
+                <label>
+                    Do you get low salary hike? : 
+                    <input placeholder="yes/no/maybe" formControlName="d29">
+                </label>
+                <br>
+            </div>
+            <br>
+            <h4 style="text-align: center;"><b>Privacy Acception</b></h4>
+            <div class ="label priv" style="margin-right: 425px;margin-left: 425px;text-align: center;">
+                <label>
+                    Do you Accept Privacy Terms: 
+                    <input placeholder="yes/no" formControlName="concent">
+                </label>
+                <br>
+                <label>
+                    HR Security Key: 
+                    <input placeholder="*****" formControlName="hrsec">
+                </label>
+                <label>
+                    Emplyoyee Security Key: 
+                    <input placeholder="*****" formControlName="empsec">
+                </label>
+            </div>
+            <br>
+            <button type="submit" class="button" style="margin-left: 715px;">Submit</button>
+            <br>
+            <br>
+        </form> 
+    </div>
+</div>
