@@ -1,0 +1,81 @@
+.aboutMain {
+  overflow-x: hidden;
+}
+
+.service {
+  width: 95vw;
+  text-align: center;
+}
+
+.service .section_row {
+  margin: 2rem 0;
+  padding: 0 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.service .section_row .image img {
+  width: 50vw;
+  height: 55vh;
+}
+.service .section_row .section_content {
+  text-align: justify;
+  padding: 0 3rem;
+}
+.service .section_row .section_content h3 {
+  font-size: 2rem;
+  color: var(--color);
+}
+.service .section_row .section_content p {
+  font-size: 1rem;
+  color: #333;
+  padding: 1rem 0;
+}
+
+.landingHeading {
+  font-size: 3.5rem;
+  color: var(--color);
+  line-height: 4.5rem;
+  font-weight: 200;
+}
+
+.landingPara {
+  font-size: 1.3rem;
+  color: #333;
+  padding: 1rem 0;
+  line-height: 1.7;
+}
+
+.landing {
+  background-color: #f5dcdb;
+  width: 100vw;
+  text-align: center;
+  height: 100vh;
+}
+
+.landingImg {
+  width: 50vw;
+  height: 75vh;
+  margin-top: 2rem;
+}
+
+.landing_section_row {
+  margin: 2rem 0;
+  padding: 0 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.landing_section_content {
+  text-align: justify;
+  padding: 0 3rem;
+}
+
+.section_heading {
+  margin: 2rem;
+  display: inline-block;
+  font-size: 3.5rem;
+  letter-spacing: 0.1rem;
+  padding-top: 1rem;
+}
