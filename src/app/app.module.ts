@@ -17,6 +17,7 @@ import { IgxPieChartModule } from 'igniteui-angular-charts';
 import { NgApexchartsModule } from "ng-apexcharts";
 import { MatTableModule } from '@angular/material/table';
 import { MatSortModule } from '@angular/material/sort';
+import { WellnesssProgrammComponent } from './wellnesss-programm/wellnesss-programm.component';
 
 @NgModule({
   declarations: [
@@ -28,6 +29,7 @@ import { MatSortModule } from '@angular/material/sort';
     AboutComponent,
     SurveyComponent,
     SentimentComponent,
+    WellnesssProgrammComponent,
   ],
   imports: [
     BrowserModule,

@@ -6,7 +6,7 @@ body {
 .topnav {
   position: relative;
   overflow: hidden;
-  background-color: black;
+  background-color: maroon;
 }
 
 .topnav a {
@@ -26,4 +26,9 @@ body {
 .topnav a.active {
   background-color: #c63631;
   color: white;
+}
+
+#git
+{
+  text-align: right;
 }

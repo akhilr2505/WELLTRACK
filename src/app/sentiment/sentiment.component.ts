@@ -59,6 +59,7 @@ export class SentimentComponent implements OnInit {
         this.data.push(res.Sentiment.negative)
         this.data.push(res.Sentiment.neutral)
         this.data.push(res.Tweets.tweets.length)
+        alert("Click Analyse")
         if(this.data[0]>this.data[1]&&this.data[0]>this.data[2])
         {
           this.message = "negative mood"
@@ -106,6 +107,8 @@ export class SentimentComponent implements OnInit {
     while (this.data.length) {
       this.data.pop();
     }
+    this.message="";
+    this.onclick();
   }
 
 }

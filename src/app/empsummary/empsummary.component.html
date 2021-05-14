@@ -19,9 +19,12 @@
         <button class="submit button" type="submit">Submit</button>
       </form>
     </div>
+    <a class="summary button">Summary</a>
+    <div>Summary : {{ message }}</div>
+    <a class="predict button">Predicted Score</a>
+    <div> Emp Predicted Score : {{predict}}</div>
     <button class="analysis button" (click)="onclick()">Chart Analysis</button>
-    <div>
-      <div id="chart">
+    <div id="chart">
         <apx-chart
           [series]="chartOptions.series"
           [chart]="chartOptions.chart"
@@ -31,12 +34,7 @@
           [stroke]="chartOptions.stroke"
           [title]="chartOptions.title"
         ></apx-chart>
-      </div>
     </div>
-    <button class="summary button" (click)="onSummary()">Summary</button>
-    <div>Summary : {{ message }}</div>
-    <button class="predict button" (click)="onPredict()">Predicted Score</button>
-    <div> Emp Predicted Score : {{predict}}</div>
     <button class="clear button" (click)="clear()">Clear</button>
 </div>
 </div>

@@ -6,6 +6,7 @@ import {WellnesstableComponent} from './wellnesstable/wellnesstable.component';
 import {AboutComponent} from './about/about.component';
 import { SurveyComponent } from './survey/survey.component'
 import {SentimentComponent} from './sentiment/sentiment.component'
+import {WellnesssProgrammComponent} from './wellnesss-programm/wellnesss-programm.component'
 
 const routes: Routes = [
   {
@@ -25,6 +26,9 @@ const routes: Routes = [
   },
   {
     path:'sentiment',component: SentimentComponent
+  },
+  {
+    path:'program',component: WellnesssProgrammComponent
   }
 ];
 

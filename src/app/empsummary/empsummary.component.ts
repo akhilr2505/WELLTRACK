@@ -67,6 +67,7 @@ export class EmpsummaryComponent implements OnInit{
         console.log(this.message);
       })
     }
+
     onPredict()
     {
       if(this.summaryGroup.valid)
@@ -75,6 +76,7 @@ export class EmpsummaryComponent implements OnInit{
         {
           console.log(res.toString());
           this.predict=res.toString();
+          alert("Predicted Value = "+ this.predict)
         })
       }
     }
@@ -150,6 +152,9 @@ export class EmpsummaryComponent implements OnInit{
         }
         console.log(this.date);
         console.log(this.score);
+        this.onPredict();
+        this.onSummary();
+        alert("click chart summary")
       })
     }
   }
@@ -167,5 +172,7 @@ export class EmpsummaryComponent implements OnInit{
     }
     this.message="";
     this.average="";
+    this.predict="";
+    this.onclick();
   }
 }
