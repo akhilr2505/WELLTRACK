@@ -19,7 +19,7 @@ const routes: Routes = [
     path:'summary',component:EmpsummaryComponent
   },
   {
-    path:'about',component: AboutComponent
+    path:'',component: AboutComponent
   },
   {
     path:'survey',component: SurveyComponent
