@@ -1,3 +1,16 @@
+.block {
+  border: 1px solid;
+  width: 35%;
+  margin: auto;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 15px;
+  background-color: maroon;
+  border: black 2px;
+  color: white;
+  text-align: center;
+}
+
 #chart {
   max-width: auto;
   margin: 35px auto;

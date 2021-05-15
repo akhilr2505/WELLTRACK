@@ -63,6 +63,12 @@ export class EmpsummaryComponent implements OnInit{
         this.average = sum/this.score.length;
         let d = this.data.pop()
         this.message = "The Employe Name: "+d.name+" having ID "+d.empid+" has average wellbeing score: "+this.average+".";
+        if(this.average<45)
+          this.message = this.message + "This employee is not wellbeing.He/She has to be taken care inform his/her Manager about this."
+        else if(this.average> 45 && this.average<75)
+          this.message = this.message + "This employee is netrally wellbeing. But he/she should be given care pireodically."
+        else
+          this.message = this.message + "This employee wellbeing good."
         console.log(this.data);
         console.log(this.message);
       })

@@ -1,3 +1,5 @@
+<br><br>
+<p style="text-align: center;"><b>HR has to enter ID of Employee to see his/her Wellness Score Summary.</b></p>
 <div class="summaryMain">
   <h1 class="summaryHeading">Employee Summary Search Board</h1>
   <div class="summaryContent">
@@ -19,10 +21,10 @@
         <button class="submit button" type="submit">Submit</button>
       </form>
     </div>
-    <a class="summary button">Summary</a>
-    <div>Summary : {{ message }}</div>
-    <a class="predict button">Predicted Score</a>
-    <div> Emp Predicted Score : {{predict}}</div>
+    <div class="block">
+      <div> <b>Summary</b> : {{ message }}</div>
+      <div> <b>Emp Predicted Score</b>  : {{predict}}</div>
+    </div>
     <button class="analysis button" (click)="onclick()">Chart Analysis</button>
     <div id="chart">
         <apx-chart
