@@ -28,8 +28,9 @@ The metrics collected will provide two fold information that will aid in creatin
 ![image](https://user-images.githubusercontent.com/53989824/178523742-11f59818-d19e-4444-aa31-e3da75c944e0.png)
 ![image](https://user-images.githubusercontent.com/53989824/178523680-7c56f4df-0580-4873-99c2-1df2aa70c141.png)
 ![image](https://user-images.githubusercontent.com/53989824/178523699-9753c8b5-b67d-4941-b70b-29c9bd75bc05.png)
-![image](https://user-images.githubusercontent.com/53989824/178523719-2bd2d022-c797-48b0-bcaa-be30445098aa.png)
 
+# Our Team
+<img width="760" alt="image" src="https://user-images.githubusercontent.com/53989824/178524050-72bc9312-39d7-43d5-b9e8-d331d9ae0b5f.png">
 
 # Running the Project
 
