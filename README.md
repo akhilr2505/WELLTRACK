@@ -1,7 +1,37 @@
 
 # WELLTRACK
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.1.4.
+A full stack application that can accurately calculate employee wellbeing and predict future trends using machine learning.
+
+# Video Explanation
+https://youtu.be/ENcPvIsQDAw
+
+# Devpost Blog Article
+https://devpost.com/software/well-track
+
+# Features
+
+## Wellbeing Score
+We have identified a number of metrics that can help in accurately understanding the wellness of an employee which ranges from professional details to personal details. We have curated around 30 metrics that will give us a deep insight of the employees overall wellbeing and provide a wholistic wellbeing score.​
+
+## Prediction
+We will be using various machine learning models to effectively analyse the employee data. We have used feed forward neural networks to accurately calculate the weights of each parameter/metric and an LSTM model to give a precise predicion of future wellbeing scores.
+
+## Sentimental Analysis
+We have a sentimental analysis feature which will provide additional information about the mental and social wellbeing of an employee. We are using Twitter to analyse an employees tweets and provide a mood analysis.
+
+## Wellness Program
+The metrics collected will provide two fold information that will aid in creating strategies for wellness programs as manager-employe compatability and employee-employee compatability along with their wellness levels will be accurately shown through a number of graphs.​
+
+# Images of Project
+![image](https://user-images.githubusercontent.com/53989824/178523650-df029449-fb24-45bc-b9cb-b039ea1c72a3.png)
+![image](https://user-images.githubusercontent.com/53989824/178523742-11f59818-d19e-4444-aa31-e3da75c944e0.png)
+![image](https://user-images.githubusercontent.com/53989824/178523680-7c56f4df-0580-4873-99c2-1df2aa70c141.png)
+![image](https://user-images.githubusercontent.com/53989824/178523699-9753c8b5-b67d-4941-b70b-29c9bd75bc05.png)
+![image](https://user-images.githubusercontent.com/53989824/178523719-2bd2d022-c797-48b0-bcaa-be30445098aa.png)
+
+
+# Running the Project
 
 ## Development server
 
